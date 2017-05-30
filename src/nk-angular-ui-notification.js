@@ -1,17 +1,3 @@
-/**
- * nk-angular-ui-notification - Fork of the library angular-ui-notification (https://github.com/alexcrack/angular-ui-notification) done on May 22, 2017
- * 
- *                              This is the first version of the forked library, and the changes are:
- *                                  - default delay is set to 6000 miliseconds
- *                                  - default option closeOnClick is set to false
- *                                  - notification will be closed by clicking on the HTML element with id="close-element" (the element is not provided in this version of the library)
- *                                  - hiding the notification will stop on mouseenter and start again on mouseleave event
- * @author Nikola Kiriz
- * @version v0.! (read it without the Shift key)
- * @link https://github.com/nkiriz/nk-angular-ui-notification
- * @license MIT
- */
-
 angular.module('ui-notification',[]);
 
 angular.module('ui-notification').provider('Notification', function() {
@@ -26,7 +12,7 @@ angular.module('ui-notification').provider('Notification', function() {
         positionX: 'right',
         positionY: 'top',
         replaceMessage: false,
-        templateUrl: 'angular-ui-notification.html',
+        templateUrl: 'nk-angular-ui-notification.html',
         onClose: undefined,
         closeOnClick: false, // closeOnClick: true - value before the fork
         maxCount: 0 // 0 - Infinite
