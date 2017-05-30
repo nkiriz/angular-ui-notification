@@ -33,7 +33,7 @@ gulp.task('styles', function() {
         .pipe(csscomb())
         .pipe(header(banner, { pkg : pkg }))
         .pipe(rename({
-            basename: 'angular-ui-notification'
+            basename: 'nk-angular-ui-notification'
         }))
         .pipe(gulp.dest('dist'))
         .pipe(minifyCSS())
@@ -56,7 +56,7 @@ gulp.task('templates', function() {
         .pipe(templateCache({
             module: 'ui-notification'
         }))
-        .pipe(rename('angular-ui-notification.templates.js'))
+        .pipe(rename('nk-angular-ui-notification.templates.js'))
         .pipe(gulp.dest("build"));
 });
 
@@ -69,9 +69,9 @@ gulp.task('service', function() {
         .pipe(addsrc('build/*.js'))
         .pipe(order([
             'src/*.js',
-            'build/angular-ui-notification.templates.js'
+            'build/nk-angular-ui-notification.templates.js'
         ]))
-        .pipe(concat('angular-ui-notification.js'))
+        .pipe(concat('nk-angular-ui-notification.js'))
 
         .pipe(header(banner, { pkg : pkg }))
         .pipe(gulp.dest('dist'))

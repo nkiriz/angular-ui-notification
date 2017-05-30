@@ -7,7 +7,7 @@ angular-ui-notification
 [![Dependency Status](https://www.versioneye.com/user/projects/54f96af44f3108e7800000e4/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54f96af44f3108e7800000e4)
 [![Code Climate](https://codeclimate.com/github/alexcrack/angular-ui-notification/badges/gpa.svg)](https://codeclimate.com/github/alexcrack/angular-ui-notification)
 
-Angular.js service providing simple notifications using Bootstrap 3 styles with css transitions for animations
+Fork of the library angular-ui-notification (https://github.com/alexcrack/angular-ui-notification) done on May 22, 2017
 
 ## Features
 * No dependencies except of angular.js.
